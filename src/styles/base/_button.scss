@@ -1,0 +1,29 @@
+.big-button {
+  display: block;
+  width: 100%;
+  padding: $s-size $l-size;
+  margin: 0 auto;
+  border: none;
+  background-color: $color-primary-dark;
+  box-shadow: 0 .6rem 0 darken($color-primary-dark, 20%);
+  color: lighten($color-primary, 20%);
+  font-size: $msl-size;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: .2s;
+
+  &:not(:last-child) {
+    margin-bottom: $m-size;
+  }
+
+  &:active {
+    transform: translateY(.3rem);
+    box-shadow: 0 .3rem 0 darken($color-primary-dark, 20%);
+  }
+
+  &:disabled {
+    background-color: lighten($color-primary-dark, 20%);
+    cursor: no-drop;
+  }
+}

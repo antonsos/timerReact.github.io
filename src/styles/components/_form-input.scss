@@ -1,0 +1,26 @@
+.form {
+
+  &__input-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $m-size;
+    border-bottom: .1rem solid darken($color-blue, 10%);
+    background-color: $color-blue;
+    color: $color-primary;
+  }
+
+  &__input {
+    width: 100%;
+    padding: $s-size;
+    margin-bottom: $m-size;
+    border: none;
+    border-bottom: .2rem solid darken($color-primary-dark, 20%);
+    background-color: darken($color-light-blue, 20%);
+    color: $color-light;
+    font-size: $m-size;
+    font-weight: bold;
+
+    box-sizing: border-box;
+  }
+}
